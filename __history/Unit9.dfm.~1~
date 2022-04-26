@@ -1,0 +1,171 @@
+object Form9: TForm9
+  Left = 0
+  Top = 0
+  Caption = 'NxN'
+  ClientHeight = 319
+  ClientWidth = 661
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 152
+    Top = 232
+    Width = 11
+    Height = 19
+    Caption = 'X'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 152
+    Top = 272
+    Width = 11
+    Height = 19
+    Caption = 'Y'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 494
+    Top = 36
+    Width = 76
+    Height = 22
+    Caption = 'Renglones'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Trebuchet MS'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 65
+    Top = 36
+    Width = 72
+    Height = 22
+    Caption = 'Columnas'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Trebuchet MS'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Grid1: TStringGrid
+    Left = 168
+    Top = 24
+    Width = 320
+    Height = 145
+    ColCount = 1
+    FixedCols = 0
+    RowCount = 1
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing]
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 494
+    Top = 112
+    Width = 75
+    Height = 25
+    Caption = '+'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 494
+    Top = 64
+    Width = 75
+    Height = 25
+    Caption = '-'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 280
+    Top = 192
+    Width = 75
+    Height = 25
+    Caption = '='
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+  end
+  object Edit1: TEdit
+    Left = 169
+    Top = 234
+    Width = 344
+    Height = 21
+    TabOrder = 4
+    Text = '0'
+  end
+  object Edit2: TEdit
+    Left = 169
+    Top = 274
+    Width = 344
+    Height = 21
+    TabOrder = 5
+    Text = '0'
+  end
+  object Button4: TButton
+    Left = 62
+    Top = 70
+    Width = 75
+    Height = 25
+    Caption = '-'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 6
+    OnClick = Button4Click
+  end
+  object Button5: TButton
+    Left = 62
+    Top = 112
+    Width = 75
+    Height = 25
+    Caption = '+'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 7
+    OnClick = Button5Click
+  end
+end
