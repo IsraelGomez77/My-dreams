@@ -1,0 +1,308 @@
+object Form10: TForm10
+  Left = 0
+  Top = 110
+  Caption = 'Metodo Simpson Doble'
+  ClientHeight = 670
+  ClientWidth = 721
+  Color = clOlive
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesigned
+  PixelsPerInch = 96
+  TextHeight = 13
+  object X: TLabel
+    Left = 80
+    Top = 8
+    Width = 16
+    Height = 29
+    Caption = 'X'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label1: TLabel
+    Left = 360
+    Top = 8
+    Width = 16
+    Height = 29
+    Caption = 'Y'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 452
+    Top = 167
+    Width = 261
+    Height = 23
+    Caption = 'Numero de Sunintervalos A'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 480
+    Top = 111
+    Width = 147
+    Height = 23
+    Caption = 'Limite Superior'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 480
+    Top = 40
+    Width = 139
+    Height = 23
+    Caption = 'Limite Inferior'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 452
+    Top = 223
+    Width = 261
+    Height = 23
+    Caption = 'Numero de Sunintervalos B'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 32
+    Top = 369
+    Width = 85
+    Height = 25
+    Caption = 'Limite A'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 344
+    Top = 369
+    Width = 85
+    Height = 25
+    Caption = 'Limite B'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object grid2: TStringGrid
+    Left = 304
+    Top = 40
+    Width = 145
+    Height = 306
+    ColCount = 2
+    FixedCols = 0
+    RowCount = 1
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing]
+    TabOrder = 0
+  end
+  object grid1: TStringGrid
+    Left = 8
+    Top = 40
+    Width = 145
+    Height = 306
+    ColCount = 2
+    FixedCols = 0
+    RowCount = 1
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing]
+    TabOrder = 1
+  end
+  object edit1: TEdit
+    Left = 480
+    Top = 69
+    Width = 139
+    Height = 21
+    TabOrder = 2
+  end
+  object edit2: TEdit
+    Left = 480
+    Top = 140
+    Width = 139
+    Height = 21
+    TabOrder = 3
+  end
+  object edit3: TEdit
+    Left = 480
+    Top = 196
+    Width = 139
+    Height = 21
+    TabOrder = 4
+  end
+  object Button2: TButton
+    Left = 159
+    Top = 40
+    Width = 41
+    Height = 34
+    Caption = '+'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 5
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 159
+    Top = 311
+    Width = 41
+    Height = 35
+    Caption = '-'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 6
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 257
+    Top = 40
+    Width = 41
+    Height = 34
+    Caption = '+'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 7
+    OnClick = Button4Click
+  end
+  object Button5: TButton
+    Left = 256
+    Top = 311
+    Width = 42
+    Height = 35
+    Caption = '-'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 8
+    OnClick = Button5Click
+  end
+  object edit4: TEdit
+    Left = 480
+    Top = 252
+    Width = 139
+    Height = 21
+    TabOrder = 9
+  end
+  object Button1: TButton
+    Left = 184
+    Top = 183
+    Width = 98
+    Height = 39
+    Caption = 'Resolver'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 10
+    OnClick = Button1Click
+  end
+  object grid3: TStringGrid
+    Left = 8
+    Top = 400
+    Width = 145
+    Height = 241
+    ColCount = 2
+    FixedCols = 0
+    RowCount = 1
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing]
+    TabOrder = 11
+  end
+  object grid4: TStringGrid
+    Left = 304
+    Top = 400
+    Width = 145
+    Height = 241
+    ColCount = 2
+    FixedCols = 0
+    RowCount = 1
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing]
+    TabOrder = 12
+  end
+  object Button6: TButton
+    Left = 158
+    Top = 400
+    Width = 42
+    Height = 25
+    Caption = '+'
+    TabOrder = 13
+    OnClick = Button6Click
+  end
+  object Button7: TButton
+    Left = 257
+    Top = 400
+    Width = 41
+    Height = 25
+    Caption = '+'
+    TabOrder = 14
+    OnClick = Button7Click
+  end
+  object Button8: TButton
+    Left = 159
+    Top = 616
+    Width = 42
+    Height = 25
+    Caption = '-'
+    TabOrder = 15
+    OnClick = Button8Click
+  end
+  object Button9: TButton
+    Left = 256
+    Top = 616
+    Width = 42
+    Height = 25
+    Caption = '-'
+    TabOrder = 16
+    OnClick = Button9Click
+  end
+end

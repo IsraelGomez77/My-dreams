@@ -1,0 +1,356 @@
+object Form10: TForm10
+  Left = 0
+  Top = 110
+  Caption = 'Simpson doble'
+  ClientHeight = 670
+  ClientWidth = 721
+  Color = clSilver
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesigned
+  PixelsPerInch = 96
+  TextHeight = 13
+  object X: TLabel
+    Left = 72
+    Top = 16
+    Width = 10
+    Height = 18
+    Caption = 'X'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial Black'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label1: TLabel
+    Left = 352
+    Top = 16
+    Width = 10
+    Height = 18
+    Caption = 'Y'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial Black'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 492
+    Top = 400
+    Width = 113
+    Height = 15
+    Caption = 'N. Sunintervalos A'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Arial Black'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 504
+    Top = 195
+    Width = 92
+    Height = 15
+    Caption = 'Limite Superior'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Arial Black'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 504
+    Top = 124
+    Width = 85
+    Height = 15
+    Caption = 'Limite Inferior'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Arial Black'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 492
+    Top = 456
+    Width = 113
+    Height = 15
+    Caption = 'N. Sunintervalos B'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Arial Black'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 44
+    Top = 378
+    Width = 59
+    Height = 18
+    Caption = 'Limite A'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial Black'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 356
+    Top = 378
+    Width = 59
+    Height = 18
+    Caption = 'Limite B'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial Black'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object grid2: TStringGrid
+    Left = 304
+    Top = 40
+    Width = 145
+    Height = 306
+    ColCount = 2
+    FixedCols = 0
+    RowCount = 1
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing]
+    TabOrder = 0
+  end
+  object grid1: TStringGrid
+    Left = 8
+    Top = 40
+    Width = 145
+    Height = 306
+    ColCount = 2
+    FixedCols = 0
+    RowCount = 1
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing]
+    TabOrder = 1
+  end
+  object edit1: TEdit
+    Left = 480
+    Top = 145
+    Width = 139
+    Height = 23
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Arial Black'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+  end
+  object edit2: TEdit
+    Left = 480
+    Top = 216
+    Width = 139
+    Height = 23
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Arial Black'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+  end
+  object edit3: TEdit
+    Left = 480
+    Top = 421
+    Width = 139
+    Height = 23
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Arial Black'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 4
+  end
+  object Button2: TButton
+    Left = 159
+    Top = 40
+    Width = 41
+    Height = 34
+    Caption = '+'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Arial Black'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 5
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 159
+    Top = 80
+    Width = 41
+    Height = 35
+    Caption = '-'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Arial Black'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 6
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 257
+    Top = 40
+    Width = 41
+    Height = 34
+    Caption = '+'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Arial Black'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 7
+    OnClick = Button4Click
+  end
+  object Button5: TButton
+    Left = 256
+    Top = 80
+    Width = 42
+    Height = 35
+    Caption = '-'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Arial Black'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 8
+    OnClick = Button5Click
+  end
+  object edit4: TEdit
+    Left = 480
+    Top = 477
+    Width = 139
+    Height = 23
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Arial Black'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 9
+  end
+  object Button1: TButton
+    Left = 200
+    Top = 333
+    Width = 66
+    Height = 39
+    Caption = '='
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Arial Black'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 10
+    OnClick = Button1Click
+  end
+  object grid3: TStringGrid
+    Left = 8
+    Top = 400
+    Width = 145
+    Height = 241
+    ColCount = 2
+    FixedCols = 0
+    RowCount = 1
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing]
+    TabOrder = 11
+  end
+  object grid4: TStringGrid
+    Left = 304
+    Top = 400
+    Width = 145
+    Height = 241
+    ColCount = 2
+    FixedCols = 0
+    RowCount = 1
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing]
+    TabOrder = 12
+  end
+  object Button6: TButton
+    Left = 158
+    Top = 400
+    Width = 42
+    Height = 25
+    Caption = '+'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Arial Black'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 13
+    OnClick = Button6Click
+  end
+  object Button7: TButton
+    Left = 257
+    Top = 400
+    Width = 41
+    Height = 25
+    Caption = '+'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Arial Black'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 14
+    OnClick = Button7Click
+  end
+  object Button8: TButton
+    Left = 158
+    Top = 440
+    Width = 42
+    Height = 25
+    Caption = '-'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Arial Black'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 15
+    OnClick = Button8Click
+  end
+  object Button9: TButton
+    Left = 256
+    Top = 440
+    Width = 42
+    Height = 25
+    Caption = '-'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Arial Black'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 16
+    OnClick = Button9Click
+  end
+end
